@@ -29,22 +29,22 @@ function playRound(player1, player2) {
         return null;
     }
 }
-let P1Wins = 0;
-let P2Wins = 0;
+let player1Wins = 0;
+let player2Wins = 0;
 
 function playGame(player1, player2, playUntil = 5) {
     let game = playRound(player1, player2) 
     if (game === player1) {
-        P1Wins += 1;
-        console.log(player1.name+"'s Score:"+P1Wins)
-        console.log(player2.name+"'s Score:"+P2Wins)
+        player1Wins += 1;
+        console.log(player1.name+"'s Score:"+player1Wins)
+        console.log(player2.name+"'s Score:"+player2Wins)
     }
     else if (game === player2) {
-        P2Wins += 1;
-        console.log(player1.name+"'s Score:"+P1Wins)
-        console.log(player2.name+"'s Score:"+P2Wins)
+        player2Wins += 1;
+        console.log(player1.name+"'s Score:"+player1Wins)
+        console.log(player2.name+"'s Score:"+player2Wins)
     }
-    if (P1Wins === playUntil || P2Wins === playUntil) {
+    if (player1Wins === playUntil || player2Wins === playUntil) {
         return [game]
     }
     return playGame(player1, player2)
