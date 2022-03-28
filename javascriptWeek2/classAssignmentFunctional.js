@@ -1,19 +1,17 @@
-class Job {
-    constructor(name, industry, requiresDegree, field, compensation) {
+function Job(name, industry, requiresDegree, field, compensation) {
         this.name = name;
         this.industry = industry;
         this.requiresDegree = requiresDegree;
         this.field = field;
         this.compensation = compensation;
+        function getName() {
+            return 'The name of the job is '+this.name;
     }
-    getName() {
-        return 'The name of the job is '+this.name;
+        function getFieldandIndustry() {
+            return this.name+' is in the field of '+this.field+' and in the industry of '+this.industry+'.';
     }
-    getFieldandIndustry() {
-        return this.name+' is in the field of '+this.field+' and in the industry of '+this.industry+'.'
-    }
-    getCompensation() {
-        return 'The compensation for the job of '+this.name+' is '+this.compensation+'.'
+        function getCompensation() {
+            return 'The compensation for the job of '+this.name+' is '+this.compensation+'.';
     }
 }
  class Opportunity extends Job {
