@@ -67,20 +67,24 @@ function playRound(player1, player2) {
 let player1WinCount = 0;
 let player2WinCount = 0;
 
-function playGame(player1, player2, playUntil = 5) {
-  let game = playRound(player1, player2);
-  if (game === player1) {
+function playGame(player1, player2, playUntil) {
+  let winner = playRound(player1, player2);
+  if (winner === player1) {
     player1WinCount++;
     console.log(player1.name + "'s Score:" + player1WinCount);
     console.log(player2.name + "'s Score:" + player2WinCount);
-  } else if (game === player2) {
+  } else if (winner === player2) {
     player2WinCount++;
     console.log(player1.name + "'s Score:" + player1WinCount);
     console.log(player2.name + "'s Score:" + player2WinCount);
   }
   if (player1WinCount === playUntil || player2WinCount === playUntil) {
-    return [game];
+    return [winner];
   }
-  return playGame(player1, player2);
+  return playGame(player1, player2, playUntil);
 }
-playGame(player1, player2);
+playGame(player1, player2, 5);
+
+function playTournament (p1, p2, p3, p4) {
+  playgame (p1)
+}

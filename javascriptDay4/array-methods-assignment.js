@@ -60,7 +60,7 @@ const users = [
 const findJose = users.find((jose) => (jose.firstName = "Jose"));
 console.log(findJose);
 
-const premiumMember = users.filter((prem) => (prem.isPremiumMember = true));
+const premiumMember = users.filter((prem) => (prem.isPremiumMember === true));
 console.log(premiumMember);
 
 const last = users.map((lst) => lst.lastName);
