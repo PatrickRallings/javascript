@@ -17,7 +17,7 @@ class Job {
     }
 }
  class Opportunity extends Job {
-     constructor(name, industry, requiresDegree, field, compensation, growingField) {
+    constructor(name, industry, requiresDegree, field, compensation, growingField) {
         super (name, industry, requiresDegree, field, compensation)
         this.growingField = growingField
         }
