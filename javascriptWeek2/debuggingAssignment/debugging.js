@@ -7,24 +7,24 @@ const storeOwners = [
     location: "in NM",
   },
 ];
+// ------------------------ Commented out all unnecessary code----------------------
+// const listNumberOfStores = function () {
+  // for (let i = 0; i < storeOwners.length; i++) {
+    // let totalLocations = totalLocations + i;
+  // }
+  // return i;
+// };
 
-const listNumberOfStores = function () {
-  for (let i = 0; i < storeOwners.length; i++) {
-    let totalLocations = totalLocations + i;
-  }
-  return i;
-};
 
 
+// function tellMeMyStores() {
+  console.log("Hey, can you tell me who owns stores?");
+  // if (locations > 0) {
+  //   console.log("Of course, we have " + totalLocations + " stores");
+  // }
+// }
 
-function tellMeMyStores() {
-  console.log("Hey, can you tell me how many stores you have?");
-  if (locations > 0) {
-    console.log("Of course, we have " + totalLocations + " stores");
-  }
-}
-
-let locations = listNumberOfStores;
+// let locations = listNumberOfStores;
 
 function hasStore() {
   for (let i = 0; i < 3; i++) {
@@ -34,7 +34,7 @@ function hasStore() {
   }
 }
 
-tellMeMyStores();
+// tellMeMyStores();
 hasStore();
 
 let man = Object.keys(storeOwners[3]);
