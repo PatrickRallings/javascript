@@ -40,7 +40,7 @@ hasStore();
 let man = Object.keys(storeOwners[3]);
 let mister = man[0];
 
-let whereHeLives = mister.location;
+let whereHeLives = storeOwners[3].location;
 console.log(
   "Yes, " + mister + " that lives " + whereHeLives + " owns one too."
 );
