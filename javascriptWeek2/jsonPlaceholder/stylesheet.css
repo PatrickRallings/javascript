@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(127deg, #00dbde 0%, #fc00ff 100%);
+  background: linear-gradient(127deg, #00dbde 0%, #84959c 100%);
 }
 #navCont {
   display: flex;
@@ -64,7 +64,7 @@ footer {
 }
 button {
   width: 85%;
-  margin: 5px;
+  margin: 8px;
   margin-left: 8%;
   align-self: center;
   font-size: 10px;
